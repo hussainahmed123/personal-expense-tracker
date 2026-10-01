@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History - Personal Expense Tracker</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Personal Expense Tracker</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="add-transaction.html">Add Transaction</a> |
+        <a href="transactions.html">Transactions</a> |
+        <a href="login.html">Logout</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Transaction History</h2>
+            <p>Below is a complete record of all your transactions.</p>
+
+            <div class="controls-bar">
+              <div class="search-wrapper">
+                <span class="search-icon"></span>
+                <input type="text" id="searchInput" placeholder="Search by category or description...">
+              </div>
+
+              <div class="filter-wrapper">
+                <label for="filterType">Filter:</label>
+                <select id="filterType">
+                  <option value="all">All</option>
+                  <option value="Income">Income</option>
+                  <option value="Expense">Expense</option>
+                </select>
+              </div>
+
+              <div class="filter-wrapper">
+                <label for="sortOption">Sort:</label>
+                <select id="sortOption">
+                  <option value="date-newest">Date (Newest First)</option>
+                  <option value="date-oldest">Date (Oldest First)</option>
+                  <option value="amount-high">Amount (High to Low)</option>
+                  <option value="amount-low">Amount (Low to High)</option>
+                </select>
+              </div>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transaction ID</th>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="transactionTableBody">
+                    <!-- Transactions will be loaded dynamically by script.js -->
+                </tbody>
+
+            </table>
+
+            <p>
+                <a href="add-transaction.html">Add New Transaction</a> |
+                <a href="dashboard.html">Back to Dashboard</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Personal Expense Tracker. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

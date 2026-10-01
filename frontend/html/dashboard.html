@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Personal Expense Tracker</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Personal Expense Tracker</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="dashboard.html">Dashboard</a> |
+    <a href="add-transaction.html">Add Transaction</a> |
+    <a href="transactions.html">Transactions</a> |
+    <a href="login.html">Logout</a>
+  </nav>
+
+  <main>
+
+    <section>
+      <article>
+        <h2>Welcome back!</h2>
+        <p>Here's your financial overview.</p>
+      </article>
+    </section>
+
+    <hr>
+    <section>
+      <h2>Account Summary</h2>
+      <div class="dashboard-cards">
+        <article class="card">
+          <h3>Total Income</h3>
+          <p id="totalIncome">Rs: 0.00</p>
+        </article>
+        <article class="card">
+          <h3>Total Expenses</h3>
+          <p id="totalExpenses">Rs: 0.00</p>
+        </article>
+        <article class="card">
+          <h3>Remaining Balance</h3>
+          <p id="remainingBalance">Rs: 0.00</p>
+        </article>
+      </div>
+    </section>
+
+    <hr>
+    <section>
+      <h2>Monthly Summary</h2>
+      <div class="dashboard-cards">
+        <article class="card">
+          <h3>Monthly Income</h3>
+          <p id="monthlyIncome">Rs: 0.00</p>
+        </article>
+        <article class="card">
+          <h3>Monthly Expenses</h3>
+          <p id="monthlyExpenses">Rs: 0.00</p>
+        </article>
+        <article class="card">
+          <h3>Monthly Balance</h3>
+          <p id="monthlyBalance">Rs: 0.00</p>
+        </article>
+      </div>
+    </section>
+
+    <hr>
+    <section>
+      <h2>Category Statistics</h2>
+      <div id="categoryStats">
+        <p>No expense data available.</p>
+      </div>
+    </section>
+
+    <hr>
+    <section>
+      <h2>Recent Transactions</h2>
+      <div id="recentTransactions">
+        <p>No transactions yet.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Personal Expense Tracker. All rights reserved.</p>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

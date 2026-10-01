@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Transaction - Personal Expense Tracker</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Personal Expense Tracker</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="add-transaction.html">Add Transaction</a> |
+        <a href="transactions.html">Transactions</a> |
+        <a href="login.html">Logout</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Add New Transaction</h2>
+            <p>Record a new income or expense transaction below.</p>
+
+            <form id="transactionForm">
+
+                <label for="type">Transaction Type:</label>
+                <select id="type" name="type" required>
+                    <option value="">-- Select Transaction Type --</option>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" step="0.01" min="0.01" placeholder="Enter amount" required>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">-- Select Category --</option>
+                    <option value="salary">Salary</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="investment">Investment</option>
+                    <option value="gift">Gift</option>
+                    <option value="food">Food &amp; Dining</option>
+                    <option value="groceries">Groceries</option>
+                    <option value="transport">Transportation</option>
+                    <option value="fuel">Fuel</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="bills">Bills &amp; Utilities</option>
+                    <option value="rent">Rent</option>
+                    <option value="insurance">Insurance</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="education">Education</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="travel">Travel</option>
+                    <option value="subscription">Subscription</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" cols="50"
+                    placeholder="Enter transaction details or notes..."></textarea>
+
+                <input type="hidden" id="editId" name="editId" value="">
+                <button type="submit">Add Transaction</button>
+
+            </form>
+
+            <p><a href="transactions.html">View Transaction History</a> | <a href="dashboard.html">Back to Dashboard</a></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Personal Expense Tracker. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

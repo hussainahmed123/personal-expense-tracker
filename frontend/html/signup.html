@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Personal Expense Tracker</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Personal Expense Tracker</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="login.html">Login</a> |
+        <a href="signup.html">Sign Up</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Create a New Account</h2>
+            <p>Please fill in the form to register.</p>
+
+            <form action="#" method="post" id="signupForm">
+
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter eight digit password"
+                    required>
+
+
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password"
+                    required>
+
+
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">-- Select your country --</option>
+                    <option value="pk">Pakistan</option>
+                    <option value="af">Afghanistan</option>
+                    <option value="ir">Iran</option>
+                    <option value="in">India</option>
+                    <option value="ch">China</option>
+                    <option value="other">Other</option>
+                </select>
+
+
+                <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                <label for="terms">I accept the Terms and Conditions</label>
+
+
+                <button type="submit">Sign Up</button>
+
+            </form>
+
+            <p>Already have an account? <a href="login.html">Login here</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Personal Expense Tracker. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
